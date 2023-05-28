@@ -1,0 +1,8 @@
+<div id="producto" *ngFor="let manzana of frutas">
+    <img [src]="manzana.imgURL" width="200px">
+    <div>
+        <h4>{{manzana.nombreDeManzana}}</h4>
+        <h5>{{manzana.precio}}</h5>
+        <p>breve descripcion del producto</p>
+    </div>
+</div>

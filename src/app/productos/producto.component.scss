@@ -1,0 +1,14 @@
+#producto{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    img{
+        height: 150px;
+    }
+    div{
+        margin-right: 100px;
+    }
+}

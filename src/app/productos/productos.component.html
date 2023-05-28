@@ -1,0 +1,14 @@
+<div id="productos">
+    <a href="/manzanas">Manzanas</a>
+    <a href="/peras">Peras</a>
+    <a href="/bananas">Banans</a>
+    <div class="container" *ngIf="this.currentUrl==='/manzanas'">
+        <app-producto></app-producto>
+    </div>
+    <div class="container" *ngIf="this.currentUrl==='/peras'">
+        <app-peras></app-peras>
+    </div>
+    <div class="container" *ngIf="this.currentUrl==='/bananas'">
+        <app-bananas></app-bananas>
+    </div>
+</div>

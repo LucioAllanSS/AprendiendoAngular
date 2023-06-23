@@ -1,6 +1,10 @@
 #productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
     border: 1px solid black;
-    width: 600px;
+    width: 750px;
     margin: 20px;
     padding: 10px;
 }

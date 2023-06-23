@@ -19,4 +19,17 @@ export class PerasComponent {
   this.frutas.push(fruta1, fruta2)
   }
 
+  public comboO = document.getElementById('combo') as HTMLSelectElement | null
+
+  ngAfterViewInit(){
+    this.frutas.sort((a, b) => a.precio - b.precio);
+    
+    this.comboO?.addEventListener('click', (event) => {
+        if (this.comboO?.value === "menorPrecio"){
+          this.frutas.sort((a, b) => a.precio - b.precio);
+        } else if (this.comboO?.value === "mayorPrecio") {
+          this.frutas.sort((a, b) => b.precio - a.precio);
+        }
+      })
+  }
 }

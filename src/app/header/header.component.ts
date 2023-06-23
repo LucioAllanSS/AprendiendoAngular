@@ -4,11 +4,11 @@ import { Component } from '@angular/core';
   selector: 'app-header',
   template:`
     <div id="header">
-      <h1>AprendiendoAngular</h1>
+      <a href=""> <h1>AprendiendoAngular</h1></a>
       <div class="nav">
-          <a href="">|Sección 1</a>
-          <a href="">|Sección 2</a>
-          <a href="">|Sección 3</a>
+        <a href="/manzanas">|Manzanas</a>
+          <a href="/peras">|Peras</a>
+          <a href="/bananas">|Bananas</a>
       </div>
     </div>
   `,

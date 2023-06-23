@@ -11,11 +11,6 @@ export class ProductosComponent {
   currentUrl: string;
   constructor(private location: Location) {
     this.currentUrl = this.location.path();
-    
-    if(this.currentUrl === "/manzanas"){
-      
-    }
-
   }
   
 }
